@@ -1,12 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cz">
 <head>
+
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HouseFix-last-version</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h2>HouseFix</h2>
+
+    <!--Header-->
+
+    <header class="header">
+        <div class="container">
+            <div class="header-block">
+                <div class="header__logo">
+                    <img src="img/Logo.svg" alt="Logo">
+                </div>
+                <div class="header__info">
+                    <div class="header__contacts">
+                        <span class="header__address">Praha</span>
+                        <a href="+420777167699" class="href header__phone">+420 777 167 699</a>
+                    </div>
+                    <button class="button header__button" id="button">Zavolejte mi</button>
+                </div>
+            </div>
+        </div>
+    </header>
+   <!--1.sekce-->
+
+   <main>
+    <section class="main">
+        <div class="container">
+            <div class="main-block">
+                <div class="main-text">
+                    <h1 class="main-text__title">Dekorace vnitřníc prostorů "na klíč"</h1>
+                    <span class="main-text__subtitle">se zárukou kvality stanovené ve smlouvě</span>
+                    <ul class="main-list">
+                        <li class="main-list__item">
+                            <div class="main-image">
+                                <img src="img/clock-circular-outline_(3).svg"alt="Hodiny">
+                            </div>
+                            <span class="main-list__text">Přesně dodržujeme termíny</span>
+                        </li>
+                        <li class="main-list__item">
+                            <div class="main-image">
+                                <img src="img/calculator (1).svg"alt="Kalkulátor">
+                            </div>
+                            <span class="main-list__text">Vypočítáme náklady práce a materiálů ve stejný den poptávky</span>
+                        </li>
+                        <li class="main-list__item">
+                            <div class="main-image">
+                                <img src="img/paint-board-and-brush.svg" alt="Paleta">
+                            </div>
+                            <span class="main-list__text">Nabídneme vám více než 100 možnostíprovedení designu vašeho bydlení</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-image">
+                    <img src="img/bedroom.svg" alt="Rozpoložení bytu">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--2.sekce-->
+
+    <section class="offer">
+        <div class="container">
+            <div class="offer-block">
+                <h2 class="offer-title">Bezplatně vypracujeme design-projekt pro Váš domov a realizujeme ho!</h2>
+                <span class="offer-subtitle">Zanechte poptávku pro vypracování bezplatného design-projektu!</span>
+                <form action="#" class="form offer__form">
+                    <input type="text" class="input offer__input" placeholder="Vaše jméno">
+                    <input type="tel" class="input offer__input"placeholder="Vaše telefon">
+                    <button class="button offer__button">
+                        Získejte bezplatný design-projekt
+                    </button>
+                </form>
+                <span class="offer-main__text">Náš manažer vám zavolá v průběhu 60 sekund</span>
+                <span class="offer-main__text">nebo nám zavolejte sami</span>
+                <a href="+420777167699" class="href header__phone">+420 777 167 699</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<section class="portfolio">
+    <div class="container">
+        <h2 class="section-title portfolio__title">
+            Za dobu práce od roku 2007, jsme realizovali více než 500  oprav bytů a domů.
+        </h2>
+        <div class="slider">
+            <div class="slider__item"><img src="img/chairs_1_2.png" alt="Obrázek 1"></div>
+            <div class="slider__item"><img src="img/tv_2_2.png" alt="Obrázek 2"></div>
+            <div class="slider__item"><img src="img/bed_3_2.png" alt="Obrázek 3"></div>
+            <div class="slider__item"><img src="img/chairs_1_2.png" alt="Obrázek 1"></div>
+            <div class="slider__item"><img src="img/tv_2_2.png" alt="Obrázek 2"></div>
+            <div class="slider__item"><img src="img/bed_3_2.png" alt="Obrázek 3"></div>
+        </div>
+    </div>
+</section>
+
+<div class="modal">
+    <div class="modal-dialog">
+        <button class="modal-dialog__close" id="close">&times;</button>
+        <h4 class="modal-dialog__title">Modální okno</h4>
+    </div>
+</div>
+
+<script src="jquery-3.7.0.min.js"></script>
+<script src="main.js"></script>      
+    
+    
+</body>
+</html>    
+
 </body>
 </html>
