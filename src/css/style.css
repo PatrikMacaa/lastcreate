@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Museo Sans Light";
+  src: url("../fonts/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo Sans Bold";
+  src: url("../fonts/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -138,6 +152,7 @@ img {
   color: #333;
   padding-right: 200px;
   line-height: 55px;
+  font-family: "Museo Sans 700 Bold";
   margin: 45px 0 20px 0;
 }
 @media (max-width: 1200px) {
@@ -227,7 +242,7 @@ img {
 
 .offer {
   padding: 90px 0;
-  background: url("../img/offer-bg.jpg") no-repeat;
+  background-image: url("../img/kitchen-bg.jpg");
   background-position: center right;
   background-size: contain;
   position: relative;
@@ -304,7 +319,7 @@ img {
 
 .portfolio {
   padding: 100px 0;
-  background: #f5f5f5 url("../img/portfolio-bg.png") left repeat-y;
+  background: #f5f5f5 url("../img/bg2.jpg") left repeat-y;
   background-size: 50%;
 }
 .portfolio__title {
