@@ -1,5 +1,9 @@
 
 $(document).ready(function(){
+
+  //Napojení knihovny wowJS
+  new WOW().init();
+
     var button = $('#button');
     var modal = $('#modal');
     var close = $('#close');
@@ -12,6 +16,8 @@ $(document).ready(function(){
         modal.removeClass('modal_active');
     });
     
+    //Napojení slideru
+
     $('.slider').slick({
         slidesToShow: 3,
         prevArrow: $('.arrows_left'),
