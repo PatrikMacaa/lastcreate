@@ -415,17 +415,17 @@ img
 
 
 .brief
-    background-image: url('../img/brief-color-bg.jpg'), url('../img/brief-bg.jpg')
+    background-image: url('..img/brief-color-bg.jpg'), url('../img/brief-bg.jpg')
     background-position: left center, center right
     background-size: 50%, cover
     background-repeat: repeat-y , no-repeat
     padding: 100px 0
     @media (max-width: 768px)
-        background-image: url('../img/brief-color-bg.jpg'), url('../img/brief-bg.jpg')
+        background-image: url('..src/img/brief-color-bg.jpg'), url('..img/brief-bg.jpg')
         background-position: top center, center bottom
         background-size: 100% 50%, cover
         background-repeat: repeat-x , no-repeat
-        padding: 50px 0
+        padding: 50px 0s
     &-block 
         display: flex
         @media (max-width: 768px)
@@ -588,3 +588,5 @@ img
             right: 0
             top: 0
 
+.error
+    border: 10px solid green

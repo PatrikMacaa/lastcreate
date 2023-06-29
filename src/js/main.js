@@ -15,6 +15,24 @@ $(document).ready(function(){
     close.on('click', function(){
         modal.removeClass('modal_active');
     });
+
+    //Validace formulářů
+
+    $('#brief-form').validate({
+      rules: {
+        username: "required" ,
+        email: {
+          required: true,
+          email: true,
+        }
+      },
+      messages:{
+        username: "Uved'te vaše jméno",
+        phone: "Uved'te váše telefonní číslo",
+        email: "Uved'te váš email"
+      }
+    });
+
     
     //Napojení slideru
 
